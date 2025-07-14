@@ -7,11 +7,12 @@
   <style>
     body {
       font-family: 'Quicksand', sans-serif;
-      background: #fdfdfd;
+      background: linear-gradient(to bottom, #00cfff, #fef9e7);
       display: flex;
       flex-direction: column;
       align-items: center;
       padding-top: 50px;
+      min-height: 100vh;
     }
 
     h1 {
@@ -51,40 +52,37 @@
       font-size: 1.2em;
       color: #333;
     }
+
     footer {
-  background-color: #f2f2f2;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9em;
-  color: #666;
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-}
-{<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-
-}
-
-
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 50px;
+      border-top: 1px solid #ddd;
+    }
   </style>
 </head>
 <body>
 
   <h1>Trip of Fat</h1>
-  <P style="color:rgb(27, 206, 36)">com destino buco, ou prainha branca de bike DIA 19/07 SABÁDO 🌴🌅!!</P><br>
+  <p style="color:rgb(27, 206, 36)">com destino buco, ou prainha branca de bike DIA 19/07 SÁBADO 🌴🌅!!</p><br>
+
   <h2>requisitos!!!</h2> 
   <ol>
     <li>muita vibe</li>
     <li>energias boas</li>
     <li>leve comida</li>
-    <li>resposabilidade</li>
+    <li>responsabilidade</li>
   </ol><br>
+
   <p style="color:cadetblue">chame os amigos!!!</p>
-  <h3 style="color:blueviolet">caso queira ir pra outra praia deixe aq em baixo👇🏾👇🏾👇🏾</h3>
+  <h3 style="color:blueviolet">caso queira ir pra outra praia deixe aqui em baixo 👇🏾👇🏾👇🏾</h3>
 
   <form id="formViagem">
     <label for="nome">Seu nome:</label>
-    <input type="text" id="nome" required placeholder="Ex: tiago">
+    <input type="text" id="nome" required placeholder="Ex: Tiago">
 
     <label for="destino">Escolha o destino:</label>
     <select id="destino" required>
@@ -110,13 +108,13 @@
       const nome = document.getElementById('nome').value;
       const destino = document.getElementById('destino').value;
 
-      mensagem.textContent = `Olá, ${nome}! Sua viagem para ${destino} foi registrada com sucesso,agora printe e mande no gp! 🌴🚴‍♂️`;
+      mensagem.textContent = `Olá, ${nome}! Sua viagem para ${destino} foi registrada com sucesso. Agora printe e mande no grupo! 🌴🚴‍♂️`;
     });
   </script>
-  <footer>
-  <p>&copy; 2025 Trip of Fat. Todos os direitos reservados. feito por big t</p>
-</footer>
 
+  <footer>
+    <p>&copy; 2025 Trip of Fat. Todos os direitos reservados. Feito por Big T</p>
+  </footer>
 
 </body>
 </html>
