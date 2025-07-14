@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+:root {
+  --azul-celeste: #00cfff;
+  --amarelo-sol: #ffdd57;
+  --verde-natureza: #2ecc71;
+  --areia: #fef9e7;
+  --branco: #ffffff;
+  --texto: #333;
+}
+
+/* Fundo geral */
+body {
+  background: linear-gradient(to bottom, var(--azul-celeste), var(--areia));
+  color: var(--texto);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background: var(--amarelo-sol);
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.8em;
+  color: #fff;
+  text-shadow: 1px 1px 3px #aaa;
+}
+
+/* Container principal */
+main {
+  max-width: 800px;
+  margin: 40px auto;
+  background: var(--branco);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.1);
+}
+
+/* Títulos e textos */
+h2 {
+  color: var(--verde-natureza);
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Botão ensolarado */
+button {
+  background: var(--amarelo-sol);
+  color: #333;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #ffd633;
+  transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 40px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2em;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
